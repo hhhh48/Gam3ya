@@ -1,7 +1,7 @@
 body { 
     font-family: sans-serif; 
     text-align: right; 
-    margin: 30px; 
+    margin: 20px; 
     background-color: #f4f4f4; 
     color: #333; 
 }
@@ -54,7 +54,7 @@ h1, h2 {
 .hidden { 
     display: none; 
 }
-/* تنسيق جديد للأزرار لتكون بجانب بعضها */
+/* تنسيق الأزرار لتكون بجانب بعضها */
 .actions {
     display: flex;
     gap: 5px;
@@ -68,6 +68,11 @@ h1, h2 {
     display: flex;
     gap: 5px;
 }
-.actions form input {
-    width: auto;
+
+/* التعديل الجديد على حجم خانات المبلغ والشهر */
+.actions form .amount-input {
+    width: 90px;
+}
+.actions form .month-input {
+    width: 60px;
 }
