@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الجمعيات</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container" id="home-page">
+        <h1>إدارة الجمعيات</h1>
+        
+        <hr>
+
+        <h2>إنشاء جمعية جديدة</h2>
+        <form id="create-association-form">
+            <input type="text" id="association-name" placeholder="اسم الجمعية" required>
+            <input type="number" id="association-amount" placeholder="المبلغ" required>
+            <button type="submit">إنشاء الجمعية</button>
+        </form>
+        
+        <hr>
+
+        <h2>الجمعيات الموجودة</h2>
+        <ul id="associations-list">
+            </ul>
+    </div>
+
+    <div class="container hidden" id="gam3iya-page">
+        <button id="back-button">العودة إلى القائمة الرئيسية</button>
+        <h1 id="gam3iya-name"></h1>
+        <p id="gam3iya-amount"></p>
+
+        <hr>
+
+        <h2>إضافة مشارك جديد</h2>
+        <form id="add-member-form">
+            <input type="text" id="member-name" placeholder="اسم المشارك" required>
+            <button type="submit">إضافة</button>
+        </form>
+        
+        <hr>
+
+        <h2>قائمة المشاركين</h2>
+        <ul id="members-list">
+            </ul>
+
+        <hr>
+
+        <h2>المبالغ المدفوعة</h2>
+        <ul id="payments-list">
+            </ul>
+        
+        <hr>
+
+        <h2>إضافة مستلم للمبلغ يدوياً</h2>
+        <form id="add-winner-form">
+            <select id="winner-select" required>
+                <option value="">اختر اسم المستلم</option>
+            </select>
+            <input type="number" id="winner-month" placeholder="الشهر" required>
+            <button type="submit">إضافة مستلم</button>
+        </form>
+
+        <hr>
+
+        <h2>ترتيب الصرف</h2>
+        <ul id="winners-list">
+            </ul>
+
+        <hr>
+        
+        <form id="reset-form">
+            <button type="submit">إعادة البدء</button>
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>

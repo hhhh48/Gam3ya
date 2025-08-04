@@ -1,0 +1,10 @@
+body { font-family: sans-serif; text-align: right; margin: 20px; background-color: #f4f4f4; color: #333; }
+.container { max-width: 600px; margin: auto; padding: 20px; background-color: #fff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+input, button, select { padding: 10px; margin: 5px 0; border: 1px solid #ddd; border-radius: 4px; width: 100%; box-sizing: border-box; }
+button { background-color: #007bff; color: white; border: none; cursor: pointer; transition: background-color 0.3s; }
+button:hover { background-color: #0056b3; }
+ul, ol { padding: 0; }
+li { padding: 10px; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; }
+h1, h2 { text-align: center; color: #007bff; }
+.paid-item, .received-item { margin-bottom: 5px; background-color: #e9ecef; padding: 10px; border-radius: 4px; }
+.hidden { display: none; }
