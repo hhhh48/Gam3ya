@@ -55,8 +55,8 @@ function showGam3iya(index) {
             <span>${member.name}</span>
             <div class="actions">
                 <form onsubmit="event.preventDefault(); addPayment(event, ${memberIndex});">
-                    <input type="number" name="paid_amount" placeholder="المبلغ" style="width:80px;" required>
-                    <input type="number" name="paid_month" placeholder="الشهر" style="width:60px;" required>
+                    <input type="number" name="paid_amount" class="amount-input" placeholder="المبلغ" required>
+                    <input type="number" name="paid_month" class="month-input" placeholder="الشهر" required>
                     <button type="submit">تسجيل</button>
                 </form>
                 <button onclick="editMemberName(${memberIndex})" class="edit-btn">تعديل الاسم</button>
@@ -181,8 +181,8 @@ document.getElementById('add-member-form').addEventListener('submit', (e) => {
 
 function addPayment(e, memberId) {
     const form = e.target;
-    const paid_amount = form.querySelector('input[name="paid_amount"]').value;
-    const paid_month = form.querySelector('input[name="paid_month"]').value;
+    const paid_amount = form.querySelector('.amount-input').value;
+    const paid_month = form.querySelector('.month-input').value;
     associations[currentAssociationId].payments.push({ 
         member_id: memberId, 
         paid_amount: Number(paid_amount), 
