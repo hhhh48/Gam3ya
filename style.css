@@ -71,7 +71,7 @@ h1, h2 {
 
 /* التعديل الجديد على حجم خانات المبلغ والشهر */
 .actions form .amount-input {
-    width: 90px;
+    width: 60px;
 }
 .actions form .month-input {
     width: 60px;
